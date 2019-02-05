@@ -1,14 +1,24 @@
 package diffsquares
 
-func SquareOfSum(num int) int{
+
+func SumOfSquares(num int)int{
 	sumOfSquares := 0
-	squareOfSums := 0
-	diff := 0
 	for i:=1; i < num + 1; i++{
-		squareOfSums += i
+
 		sumOfSquares += (i*i)
 	}
+	return sumOfSquares
+}
+func SquareOfSum(num int) int{
+	squareOfSums := 0
+	for i:=1; i < num + 1; i++{
+		squareOfSums += i
+	}
 	squareOfSums *=squareOfSums
-	diff =(squareOfSums-sumOfSquares)
-	return diff
+	return squareOfSums
+}
+
+func Difference(num int)int{
+
+	return  SquareOfSum(num) - SumOfSquares(num)
 }

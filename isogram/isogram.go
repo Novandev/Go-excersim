@@ -1,16 +1,19 @@
 
 package isogram
 
-func isIsogram( str string) bool{
-	isWordIsogram := false
-	var bagOfWords = []string
-	for i := range str{
-		for x := range bagOfWords{
-			if string(str[i]) == bagOfWords[x]{
-				isWordIsogram = true
-			}
-		}
+import (
+	"sort"
+	"strings"
+)
 
+func IsIsogram( str string) bool{
+	found:= true
+	s := strings.Split(str, "")
+	sort.Strings(s)
+	for i:=0; i < len(s) -1; i++{
+		if strings.ToLower(s[i]) == strings.ToLower(s[i+1]) {
+			found = false
+		}
 	}
-	return isWordIsogram
+	return found
 }

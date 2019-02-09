@@ -5,6 +5,7 @@ import (
 	"strings"
 	// "reflect"
 )
+
 func Valid(str string) bool{
 	var err error
 	str = strings.Trim(str,"")

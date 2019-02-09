@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bb928361-f888-4337-99de-4af9d31d6aca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../difference-of-squares/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../difference-of-squares/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luhn.go" beforeDir="false" afterPath="$PROJECT_DIR$/luhn.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/luhn.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -155,7 +155,7 @@
     <entry file="file://$PROJECT_DIR$/luhn.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
         </state>
       </provider>
     </entry>

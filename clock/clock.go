@@ -15,7 +15,21 @@ func New(hours, minutes int)*Clock{
 }
 // {8, 0, "08:00"}
 func (clock *Clock) String() string {
-	return fmt.Sprintf("%d:%d", clock.hours, clock.minutes)
+	returned_clock :=""
+	if clock.hours < 10 && clock.minutes > 10{
+		returned_clock = fmt.Sprintf("0%d:%d", clock.hours, clock.minutes)
+	}
+	if clock.hours < 10 && clock.minutes < 10{
+		returned_clock = fmt.Sprintf("0%d:0%d", clock.hours, clock.minutes)
+	}
+	if clock.hours > 10 && clock.minutes < 10{
+		returned_clock =fmt.Sprintf("%d:0%d", clock.hours, clock.minutes)
+	}
+	if clock.hours > 10 && clock.minutes > 10{
+		returned_clock =fmt.Sprintf("%d:%d", clock.hours, clock.minutes)
+	}
+
+	return returned_clock
 }
 
 
@@ -32,6 +46,6 @@ func (clock *Clock) add(minutes int){
 	}
 }
 
-func (clock *Clock) subtract(){
+// func (clock *Clock) subtract(){
 
-}
+// }
